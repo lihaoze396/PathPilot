@@ -1,0 +1,31 @@
+time_budget: 300
+population_size: auto
+max_sequence_length: 5
+crossover_probability: 0.9
+mutation_probability: 0.1
+
+generator:
+  pool_capacity: 10
+  max_array_length: 2
+  enable_boundary_fallback: true
+  enable_failure_remove: true
+
+instrumentation:
+  enable_three_stage: true
+  default_stage: GEI
+  stagnation_to_ksi: 3
+  tfi_no_gain_to_gei: 2
+
+static:
+  enable_support_seeds: true
+  support_seed_ratio: 0.2
+  same_contract_only: true
+
+rag:
+  enable: false
+
+agent:
+  enable: false
+
+plateau_rebuild:
+  enable: false

@@ -1,0 +1,27 @@
+{
+  "hypotheses": [
+    {
+      "id": "H1",
+      "vulnerability_type": "timelock_bypass",
+      "path": ["scheduleBatch", "executeBatch", "updateDelay"],
+      "sink": "updateDelay",
+      "priority": 0.92,
+      "expected_blockers": [
+        "timestamp",
+        "argument_consistency",
+        "self_call"
+      ]
+    },
+    {
+      "id": "H2",
+      "vulnerability_type": "privileged_withdraw",
+      "path": ["scheduleBatch", "executeBatch", "emergencyWithdraw"],
+      "sink": "emergencyWithdraw",
+      "priority": 0.88,
+      "expected_blockers": [
+        "onlySelf",
+        "call_context"
+      ]
+    }
+  ]
+}

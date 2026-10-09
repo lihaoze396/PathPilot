@@ -1,0 +1,8 @@
+eth-abi
+eth-hash
+eth-utils
+networkx
+pyyaml
+slither-analyzer
+web3
+
